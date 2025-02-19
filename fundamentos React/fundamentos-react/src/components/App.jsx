@@ -5,18 +5,22 @@ import Fragmento from "./basicos/Fragmento";
 import Aleatorio from "./basicos/Aleatorio";
 import Card from "./layout/Card";
 
-export default () => {
+export default function App(){
   return (
     <div id="app">
       <h1> Fundamentos React</h1>
-      <Card titulo="Exemplo de card">
-
+      <Card titulo="Desafio Aleatório">
+        <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
       </Card>
 
-      <Aleatorio min={1} max={60} />
-      <Fragmento />
+      <Card titulo="Fragmento">
+        <Fragmento />
+      </Card>
 
+      <Card titulo="Com Parâmetro">
       <ComParametro nome="João" nota={6.5} />
+      </Card>
 
       <Primeiro></Primeiro>
     </div>
