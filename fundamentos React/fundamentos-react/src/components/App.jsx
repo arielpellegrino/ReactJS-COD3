@@ -6,6 +6,7 @@ import Aleatorio from "./basicos/Aleatorio";
 import Card from "./layout/Card";
 import "./App.css";
 import Familia from "./basicos/Familia";
+import FamiliaMembro from "./basicos/FamiliaMembro";
 
 export default function App(){
   return (
@@ -13,7 +14,11 @@ export default function App(){
         <h1> Fundamentos React</h1>
             <div className="Cards">
                 <Card titulo="Componente com filhos" color="#00C8F8">
-                    <Familia></Familia>
+                    <Familia sobrenome="Ferreira">
+                        <FamiliaMembro nome="Pedro" />
+                        <FamiliaMembro nome="Ana" />
+                        <FamiliaMembro nome="Gustavo" />
+                    </Familia>
                 </Card>
 
 
